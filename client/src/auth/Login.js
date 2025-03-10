@@ -33,7 +33,7 @@ const Login = () => {
           type: 'LOGGED_IN_USER',
           payload: res.data, 
         })
-        navigate("/");
+        navigate("/dashboard");
       }
     } catch (error) {
       console.log(error);
