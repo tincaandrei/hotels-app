@@ -1,0 +1,13 @@
+1. IMPLEMENTING BASIC SKELETON OF THE SITE
+	
+	when using routing we need to use BrowserRouter Routes and Rout from react-router-dom
+	---see documentation  https://reactrouter.com/home, https://www.w3schools.com/react/react_router.asp
+	
+	
+2. nodemon -> auto updates and comiles every time you make a change so you are not required to 
+				do it yourself 
+			-> make sure you include this line in the package.json, in the scripts
+			
+			"scripts": {
+				"start": "nodemon server.js"
+			},
