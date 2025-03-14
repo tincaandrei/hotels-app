@@ -11,6 +11,8 @@ import Registration from './auth/Registration';
 import Login from './auth/Login';
 import Dashboard from "./user/dashboard";
 import DashboardSeller from "./user/dashboardSeller";
+import NewHotel from "./hotels/NewHotel";
+
 
 function App() {
   return (
@@ -39,6 +41,14 @@ function App() {
           element={
             <PrivateRoute>
               <DashboardSeller />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/hotels/new"
+          element={
+            <PrivateRoute>
+              <NewHotel />
             </PrivateRoute>
           }
         />
