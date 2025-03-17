@@ -12,7 +12,7 @@ import Login from './auth/Login';
 import Dashboard from "./user/dashboard";
 import DashboardSeller from "./user/dashboardSeller";
 import NewHotel from "./hotels/NewHotel";
-
+import StripeCallback from "./stripe/StripeCallback";
 
 function App() {
   return (
@@ -49,6 +49,14 @@ function App() {
           element={
             <PrivateRoute>
               <NewHotel />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/callback"
+          element={
+            <PrivateRoute>
+              <StripeCallback />
             </PrivateRoute>
           }
         />
